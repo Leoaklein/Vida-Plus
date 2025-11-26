@@ -10,3 +10,5 @@ class Usuario(AbstractUser):
     tipo = models.CharField(max_length=20, choices=TIPOS)
     cpf = models.CharField(max_length=11, unique=True, null=True, blank=True)
     data_nascimento = models.DateField(null=True, blank=True)
+    telefone = models.CharField(max_length=11, null=True, blank=True)
+    crm = models.CharField(max_length=6, unique=True, null=True, blank=True)
